@@ -4,9 +4,6 @@
 
 (function ($) {
     $('h2, p').on('click', function () {
-       $(this).linkIt({
-           href: "http://cordelia.co.ke",
-           alt: "bite me"
-       });
+       $(this).cordelia();
     });
 })(jQuery);

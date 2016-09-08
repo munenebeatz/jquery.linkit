@@ -35,4 +35,10 @@
         });
 
     }
+
+    $.fn.cordelia = function () {
+        return this.each(function () {
+            var obj = $(this);
+            obj.wrap('<a target="_blank" href="http://cordelia.co.ke"></a>');
+        });    };
 })(jQuery);
