@@ -3,8 +3,10 @@
  */
 
 (function ($) {
-    $('*').on('click', function () {
-        var typ = $(this).prop('tagName');
-        console.log(typ);
+    $('h2, p').on('click', function () {
+       $(this).linkIt({
+           href: "http://cordelia.co.ke",
+           alt: "bite me"
+       });
     });
 })(jQuery);
